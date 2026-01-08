@@ -12,7 +12,7 @@ body {
 
 /* NAV */
 .nav {
-  padding: 18px 40px;
+  padding: 16px 24px;
   background: linear-gradient(135deg, #ff7a18, #ffb703);
   color: #fff;
   font-size: 22px;
@@ -22,7 +22,7 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 90px 20px 70px;
+  padding: 80px 20px 60px;
   background: linear-gradient(135deg, #ffe8cc, #fff1dc);
 }
 
@@ -34,10 +34,12 @@ body {
 .hero p {
   margin: 14px 0 34px;
   color: #555;
+  font-size: 16px;
 }
 
 .hero input {
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   padding: 16px 22px;
   border-radius: 40px;
   border: none;
@@ -56,7 +58,7 @@ body {
 
 /* GRID */
 .box {
-  padding: 60px;
+  padding: 60px 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 35px;
@@ -100,6 +102,7 @@ body {
   justify-content: center;
   gap: 10px;
   margin-bottom: 16px;
+  flex-wrap: wrap;
 }
 
 .tags span {
@@ -126,4 +129,47 @@ body {
 
 .btn:hover {
   transform: scale(1.05);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 480px) {
+  .nav {
+    font-size: 18px;
+    padding: 14px 18px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .box {
+    padding: 40px 20px;
+    gap: 25px;
+  }
+
+  .card img {
+    height: 170px;
+  }
+}
+
+/* 📱 Tablet Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .box {
+    padding: 50px 30px;
+  }
+}
+
+/* 💻 Large Screens */
+@media (min-width: 1024px) {
+  .box {
+    padding: 70px 80px;
+  }
 }
