@@ -21,7 +21,7 @@ and watch full recipe videos using data from **TheMealDB API**.
 ## 🛠 Tech Stack
 
 **Frontend**
-- https://raw.githubusercontent.com/talhaw-cmd/react-food-cravings/main/src/assets/cravings_react_food_3.5.zip (Functional Components)
+- React.js (Functional Components)
 - React Hooks (`useState`, `useEffect`)
 
 **API**
